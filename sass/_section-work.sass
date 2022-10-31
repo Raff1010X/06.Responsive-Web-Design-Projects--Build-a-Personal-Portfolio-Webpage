@@ -1,0 +1,134 @@
+//<-- SECTION WORK -->
+
+#section-3-container
+  @include flex-column-center
+  justify-content: space-evenly
+
+  h2
+    @include font-colorfull($vw: 8vw, $rem: 2.5rem, $px: 66px)
+    @media (max-width: #{$width-tablet}) and (orientation : landscape)
+      font-size: 6vw !important
+
+
+
+.projects-grid
+  @include flex-row-center
+  justify-content: center
+  perspective: 1000px
+  width: 100%
+  height: 40vh
+
+.slide-hidden
+  display: none
+
+.slide-left
+  transform: rotateY(-90deg) scale(0.25) translateX(-200vw) translateY(-100vh)
+  filter: contrast(0) sepia(90%) hue-rotate(var(--data-color-hue-rotate)) saturate(50)
+  opacity: 0
+
+.slide-center
+  transform: rotateY(0deg)
+  z-index: 100
+  opacity: .75
+
+.slide-right
+  transform: rotateY(90deg) scale(0.25) translateX(200vw) translateY(100vh)
+  filter: contrast(0) sepia(90%) hue-rotate(var(--data-color-hue-rotate)) saturate(50)
+  opacity: 0
+
+.project
+  position: absolute
+  font-size: 1.5rem
+  text-align: center
+  transition: .75s
+  width: Min(70vw, 70vh)
+  height: auto
+  border-radius: .25rem
+  text-decoration: none
+  @media (max-width: #{$width-tablet}) 
+    width: Min(80vw, 80vh)
+
+.project-image-container
+  @include flex-row-center
+  justify-content: center
+  width: 100%
+  height: 45vh
+  overflow: hidden
+  border-radius: .25rem
+
+.project-image
+  width: 100%
+  border-radius: .25rem
+
+.project-title
+  color: var(--data-color-font)
+  font-size: 1rem
+
+
+#slider
+  @include flex-row-center
+  justify-content: space-evenly
+
+.slider-button
+  color: var(--data-color-font)
+  z-index: 100
+  i 
+    color: rgba(0, 0, 0, 0.2)
+    font-size: 4rem
+    margin: 0 4rem 0 4rem
+    text-shadow: 0 0 30px var(--data-color-font-extra-x)
+    animation-name: fade-out2
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    
+.btn-show-all
+  border-radius: 2rem
+  text-decoration: none
+  text-align: center
+  width: 6rem
+  height: 2rem
+  @include flex-column-center
+  justify-content: center
+  background-color: transparent
+  color: var(--data-color-font)
+  box-shadow: 0 0 30px var(--data-color-font-extra-x)
+  font-size: .8rem
+  &::before
+    content: ''
+    position: absolute
+    border-radius: 2rem
+    width: 6rem
+    height: 2rem
+    background-color: transparent
+    box-shadow: 0 0 30px var(--data-color-font-extra-x)
+    animation-name: fade-out
+    animation-duration: 1s
+    animation-iteration-count: infinite
+
+@keyframes fade-out
+  0%
+   // opacity: 1
+  100%
+    //box-shadow: 0 0 50vw var(--data-color-font-extra-x)
+    opacity: 0
+    transform: scale(4)
+
+@keyframes fade-out2
+  0%
+    opacity: 1
+  100%
+    opacity: 0.7
+
+
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: #{$width-tablet}) and (orientation : landscape)
+  .btn-show-all
+    opacity: 0
+  .slider-button
+    i 
+      color: rgba(0, 0, 0, 0.5)
+      margin: 0 13rem 0 13rem
+  #section-3-container
+    h2
+      transform: scale(.8)
+  #slider
+    position: absolute

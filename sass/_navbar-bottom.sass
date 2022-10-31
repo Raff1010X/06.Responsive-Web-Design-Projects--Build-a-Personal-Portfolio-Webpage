@@ -1,0 +1,26 @@
+// <!-- NAVBAR-BOTTOM SECTION -->
+
+.navbar-bottom 
+  position: fixed
+  bottom: 0px
+  left: 0px
+  height: $navbar-height
+  width: 100vw
+  z-index: 100
+  @include flex-row-center
+  justify-content: center
+  
+  #prev, #next, #navbar-bottom-text
+    padding: .5rem
+    font-size: 1.5rem
+    transition: 0.5s
+  #prev, #next
+    cursor: pointer
+    &:hover 
+      color: var(--data-color-font-extra)
+  #navbar-bottom-text
+    cursor: auto
+  
+
+  #prev:hover, #next:hover
+    transform: scale(1.2)

@@ -1,0 +1,66 @@
+//<!-- CONTACT SECTION -->
+
+#section-4-container
+  @include flex-column-center
+  justify-content: space-evenly
+
+.contact-section-header
+  text-align: center
+  h2
+    @include font-colorfull($vw: 8vw, $rem: 2.5rem, $px: 60px)
+    @media (max-width: #{$width-tablet}) and (orientation : landscape)
+      font-size: 6vw !important
+  p
+    font-size: 1.5rem
+
+.contact-links
+  @include flex-row-center
+  justify-content: center
+  width: fit-content
+  @include font-colorfull($vw: 8vw, $rem: 2.5rem, $px: 60px) 
+  a
+    text-decoration: none
+    font-size: 1rem
+    transition: .75s
+    padding: 1rem
+    @include flex-column-center
+    white-space: nowrap
+    width: 10vw
+    &:hover
+      text-shadow: 0 0 100px var(--data-color-font-extra)
+    i
+      font-size: 3rem
+      margin: .5rem
+
+        
+
+  @media (max-width: #{$width-phone})
+    width: 50%
+    @include flex-column-center
+
+  @media (max-width: #{$width-tablet}) and (orientation : landscape)
+    padding: 0
+    margin: -2rem
+
+  @media only screen and (hover: none) and (pointer: coarse) and (max-width: #{$width-tablet}) and (orientation : landscape)
+    @include flex-row-center
+    justify-content: center
+
+.contact-link
+  @include flex-row-center
+  justify-content: space-around
+  width: 70%
+
+  @media (max-width: #{$width-phone})
+    width: 100%
+    a
+      margin: 0 1rem 0 1rem 
+
+  @media (max-width: #{$width-phone-mini})
+    width: 100%
+    @include flex-column-center
+
+.contact-section-notice
+  text-align: center
+  p
+    font-size: .8rem

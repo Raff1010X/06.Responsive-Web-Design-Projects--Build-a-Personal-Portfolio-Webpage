@@ -1,0 +1,57 @@
+@import "sass/_fonts"
+@import "sass/_display"
+@import "sass/_colors"
+@import "sass/_media-queries-sizes"
+@import "sass/_hamburger-menu"
+@import "sass/_navbar"
+@import "sass/_navbar-bottom"
+@import "sass/_navbar-bottom"
+@import "sass/_theme-switch"
+@import "sass/_sections"
+@import "sass/_section-welcome"
+@import "sass/_section-contact"
+@import "sass/_section-skills"
+@import "sass/_background"
+@import "sass/_section-work"
+
+//<!-- ALL -->
+
+*
+  margin: 0
+  padding: 0
+  font-size: 1rem
+  @include exo2-font
+  user-select: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+html
+  box-sizing: border-box
+
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: #{$width-tablet}) and (orientation : landscape)
+  html
+    font-size: $font-size-landscape
+
+
+@media (max-width: #{$width-phone-mini})
+  html
+    font-size: $font-size-phone-mini
+
+@media (min-width: #{$width-desktop})
+  html
+    font-size: $font-size-desktop-large
+    
+body
+  overflow-x: hidden
+  @include colors-main
+
+::-webkit-scrollbar
+  display: none 
+
+ 
+
+  
+
+
+  
+

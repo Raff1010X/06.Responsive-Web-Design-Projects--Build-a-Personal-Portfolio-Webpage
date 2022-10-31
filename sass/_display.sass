@@ -1,0 +1,16 @@
+//<!-- DISPLAY -->
+
+$navbar-height: 80px
+
+@mixin flex-center
+  display: flex
+  flex-wrap: nowrap
+  align-items: center
+
+@mixin flex-row-center
+  @include flex-center
+  flex-direction: row
+
+@mixin flex-column-center
+  @include flex-center
+  flex-direction: column

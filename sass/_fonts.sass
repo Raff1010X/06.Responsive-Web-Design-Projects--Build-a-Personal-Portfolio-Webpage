@@ -1,0 +1,23 @@
+//<!-- FONTS -->
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap')
+
+@mixin exo2-font
+  font-family: 'Exo 2', sans-serif
+
+$font-size-phone-mini: 14px
+//$font-size-tablet: 2vw
+$font-size-landscape: 16px
+//$font-size-desktop: 1.3vw
+$font-size-desktop-large: 20px
+
+@mixin font-colorfull($vw: 10vw, $rem: 3rem, $px: 155px)
+  font-size: Calc(Min(Max($vw, $rem), $px))
+  text-transform: uppercase
+  font-family: 'Exo', sans-serif
+  line-height: .9
+  background: linear-gradient(to right, var(--data-color-font-extra), var(--data-color-font-extra-x)) 
+  -webkit-background-clip: text !important
+  -webkit-text-fill-color: transparent !important
+  transition: 1s

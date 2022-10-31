@@ -1,0 +1,30 @@
+//<!-- COLORS -->
+
+$color-main: #141314
+$color-font: #d4d4d4
+$color-font-extra: #00ff95
+$color-hue-rotate: 90deg
+
+$color-main-dark: #d4d4d4
+$color-font-dark: #141314
+$color-font-extra-dark: #ff002b
+$color-hue-rotate-dark: 310deg
+
+\:root
+  --data-color-main: #{$color-main}
+  --data-color-font: #{$color-font}
+  --data-color-font-extra: #{$color-font-extra}
+  --data-color-font-extra-x: #{$color-font-extra-dark}
+  --data-color-hue-rotate: #{$color-hue-rotate}
+
+[data-theme="dark"]
+  --data-color-main: #{$color-main-dark}
+  --data-color-font: #{$color-font-dark}
+  --data-color-font-extra: #{$color-font-extra-dark}
+  --data-color-font-extra-x: #{$color-font-extra}
+  --data-color-hue-rotate: #{$color-hue-rotate-dark}
+
+
+@mixin colors-main
+  background-color: var(--data-color-main) !important
+  color: var(--data-color-font) !important

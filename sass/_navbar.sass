@@ -1,0 +1,130 @@
+//<!-- NAV -->
+
+#navbar
+  @include flex-row-center
+  justify-content: space-between
+  height: $navbar-height
+  position: fixed
+  width: 100vw
+  top: 0
+  z-index: 100
+
+#navbar-logo-container 
+  width: 50vw
+  @include flex-row-center
+  justify-content: center
+  margin-left: 1rem
+  z-index: 101
+  div 
+    display: flex
+    flex-wrap: nowrap
+
+#navbar-logo
+  font-size: 3rem
+  display: inline
+  transition: 0.5s
+  &::before
+    content: "w"
+    font-size: 3rem
+    font-weight: bold
+    color: var(--data-color-font-extra)
+    animation-name: rotate-logo
+    animation-duration: 15s
+    animation-iteration-count: infinite
+    transform: rotateY(180deg)
+    text-shadow: 0 0 66px var(--data-color-font-extra)
+    transition: 0.5s
+
+
+#navbar-logo-e
+  font-size: 3rem
+  color: var(--data-color-font-extra)
+  transform: rotateY(180deg)
+  display: inline-block
+  transition: .5s
+  text-shadow: 0 0 66px var(--data-color-font-extra)
+  animation-name: rotate-logo
+  animation-duration: 15s
+  animation-iteration-count: infinite
+  animation-delay: 3s
+  &::before
+    content: "v"
+    color: var(--data-color-font)
+    text-shadow: none
+    transition: 0.5s
+
+@keyframes rotate-logo
+  0% 
+    transform: rotateY(180deg)
+  5% 
+    transform: rotateY(0deg)
+  10% 
+    transform: rotateY(180deg)
+  15% 
+    transform: rotateX(180deg)
+  20% 
+    transform: rotateX(0deg)
+  25% 
+    transform: rotateY(180deg)
+
+
+.nav-list
+  @include flex-row-center
+  justify-content: space-between
+  perspective: 900px
+  transition: .75s
+  li
+    margin: 0 2vw 0 2vw
+    list-style-type: none
+    transition: .5s
+    &:hover
+      transform: rotateY(20deg)
+    &:hover > a, &:hover > a::before, &:hover > a::after
+      color: var(--data-color-font-extra)
+      text-shadow: 0 0 33px var(--data-color-font-extra)
+    a
+      white-space: nowrap
+      color: var(--data-color-font)
+      text-decoration: none
+      cursor: pointer
+      transition: .5s
+      &::before
+        content: '[ '
+      &::after
+        content: ' ]'
+      &::before, &::after
+        color: transparent
+        transition: 2s
+      &:hover
+        color: var(--data-color-font-extra)
+        transform: rotateY(20deg)
+        &::before, &::after
+          color: var(--data-color-font-extra)
+    @media (max-width: #{$width-phone})
+      //width: 60vw
+      a
+        font-size: 1.5rem
+
+  @media (max-width: #{$width-phone})
+    position: absolute
+    top: $navbar-height
+    width: 100vw !important
+    height: 50vh
+    left: 101vw
+    transition-timing-function: ease
+    opacity: .2
+    transform: rotateY(180deg)
+    @include flex-column-center
+    justify-content: space-around
+
+.nav-active
+  left: 0
+  opacity: 1
+  transform: rotateY(0deg)
+
+.active-nav-link
+  color: var(--data-color-font-extra) !important
+  text-shadow: 0 0 33px var(--data-color-font-extra)
+  &::before, &::after
+    color: var(--data-color-font-extra) !important
+    text-shadow: 0 0 33px var(--data-color-font-extra)

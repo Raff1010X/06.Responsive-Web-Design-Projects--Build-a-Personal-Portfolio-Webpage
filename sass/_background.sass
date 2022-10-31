@@ -1,0 +1,35 @@
+//<!-- BACKGROUND -->
+    
+@mixin dots($count)
+  $text-shadow: ()
+  @for $i from 0 through $count 
+    $text-shadow: $text-shadow, (-.5+(random()) * 3) + em (-.5+(random()) * 3) + em 7px hsla(random() * 360, 100%, 50%,.5)
+  text-shadow: $text-shadow
+
+#background0, #background1, #background2
+  z-index: 0
+  position: fixed
+  left: 10vw
+  top: 0vh
+  width: 15vw
+  height: 15vh
+  border-radius: 50%
+  box-shadow: 0 0 15vh var(--data-color-font-extra-x)
+  opacity: 0.75
+  filter: blur(10px)
+  animation: 10s -0s move infinite ease-in-out alternate
+
+#background0
+  animation: 40s -00s move infinite ease-in-out alternate
+#background1
+  animation: 40s -20s move infinite ease-in-out alternate
+#background2
+  animation: 40s -40s move infinite ease-in-out alternate
+
+
+
+@keyframes move 
+  from 
+    transform: rotate(0deg) scale(5) translateX(-10vw)
+  to
+    transform: rotate(360deg) scale(10) translateX(10vw)

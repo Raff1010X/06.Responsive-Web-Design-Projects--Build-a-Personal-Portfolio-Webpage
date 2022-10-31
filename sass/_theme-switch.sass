@@ -1,0 +1,68 @@
+// <!-- THEME SWITCH -->
+#theme
+  @include flex-row-center
+  transform: none
+  @media (max-width: #{$width-phone})
+    &:hover
+      transform: rotateY(20deg)
+  @media (max-width: #{$width-phone-mini})
+    align-items: baseline
+
+#theme-a
+  display: none
+  @media (max-width: #{$width-phone})
+    display: initial
+
+.theme-switch 
+  @include flex-row-center
+  height: 1rem
+  width: 33px
+  position: relative
+  margin: 0 40px 0 0
+  @media (max-width: #{$width-phone})
+    display: none
+    
+input 
+  display: none
+
+.slider 
+  background-color: var(--data-color-font)
+  cursor: pointer
+  top: 0
+  left: 0
+  position: absolute
+  right: 0
+  bottom: 0
+  transition: 0.5s
+  width: 32px
+  height: 19px
+  border-radius: 32px
+  &:hover
+    background-color: var(--data-color-font-extra)
+    box-shadow: 0 0 66px var(--data-color-font-extra)
+
+.slider::before 
+  content: ""
+  background-color: var(--data-color-main)
+  //box-shadow: inset 0.25rem 0px var(--data-color-main), inset 0.25rem 0px var(--data-color-main)
+  position: absolute
+  height: 15px
+  width: 15px
+  left: 2px
+  bottom: 2px
+  transition: 0.5s
+  border-radius: 50%
+
+input:checked + .slider 
+  background-color: var(--data-color-font)
+
+  &:hover
+    background-color: var(--data-color-font-extra)
+
+input:checked + .slider:before 
+  box-sizing: border-box
+  background-color: var(--data-color-main)
+  content: ""
+  // height: 15.2px
+  // width: 15.2px  
+  transform: translateX(13px)

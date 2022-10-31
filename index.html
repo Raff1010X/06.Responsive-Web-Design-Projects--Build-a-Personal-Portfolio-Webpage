@@ -2,226 +2,225 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Albert Einstein Tribute Page">
-  <meta name="keywords" content="Einstein">
-  <meta name="author" content="Rafał Kowalczyk">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Albert Einstein</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" /> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio Page">
+    <meta name="keywords" content="Personal Portfolio">
+    <meta name="author" content="Rafał Kowalczyk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 
 <body>
+    <!-- BACKGROUND -->
 
-<!-- BACKGROUND -->
+    <div id="background0"></div>
+    <div id="background1"></div>
+    <div id="background2"></div>
 
-<div id="background0"></div>
-<div id="background1"></div>
-<div id="background2"></div>
+    <!-- NAV -->
 
-<!-- NAV -->
+    <nav id="navbar" class="nav">
+        <div id="navbar-logo-container">
+            <div>
+                <div id="navbar-logo">ebd</div>
+                <p id="navbar-logo-e">e</p>
+            </div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-li">
+                <a class="nav-link" href="#section-1">About</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-link" href="#section-2">Skills</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-link" href="#section-3">Work</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-link" href="#section-4">Contact</a>
+            </li>
+            <li id="theme"><a id="theme-a">Theme</a>
+                <label class="theme-switch" for="theme-switcher">
+                    <input type="checkbox" id="theme-switcher" title="Theme" />
+                    <div class="slider"></div>
+                </label>
+            </li>
+        </ul>
+        <button class="hamburger hamburger--spin" type="button" title="Menu">
+            <div class="hamburger-inner"></div>
+        </button>
+    </nav>
 
-<nav id="navbar" class="nav">
-  <div id="navbar-logo-container">
-      <div>
-          <div id="navbar-logo">ebd</div>
-          <p id="navbar-logo-e">e</p>
-      </div>
-  </div>
-  <ul class="nav-list">
-      <li class="nav-li">
-          <a class="nav-link" href="#section-1">About</a>
-      </li>
-      <li class="nav-li">
-          <a class="nav-link" href="#section-2">Skills</a>
-      </li>
-      <li class="nav-li">
-          <a class="nav-link" href="#section-3">Work</a>
-      </li>
-      <li class="nav-li">
-          <a class="nav-link" href="#section-4">Contact</a>
-      </li>
-      <li id="theme"><a id="theme-a">Theme</a>
-          <label class="theme-switch" for="theme-switcher">
-              <input type="checkbox" id="theme-switcher" title="Theme" />
-              <div class="slider"></div>
-          </label>
-      </li>
-  </ul>
-  <button class="hamburger hamburger--spin" type="button" title="Menu">
-      <div class="hamburger-inner"></div>
-  </button>
-</nav>
+    <!-- WELCOME SECTION -->
 
-<!-- WELCOME SECTION -->
+    <section id="section-1" class="welcome-section">
+        <div id="section-1-container" class="section-containers">
+            <div id="welcome-container">
+                <h1 id="welcome">Hey I am<br>Rafaello</h1>
+                <p>A Web Developer</p>
+            </div>
+        </div>
+    </section>
 
-<section id="section-1" class="welcome-section">
-  <div id="section-1-container" class="section-containers">
-      <div id="welcome-container">
-          <h1 id="welcome">Hey I am Rafaello</h1>
-          <p>A Web Developer</p>
-      </div>
-  </div>
-</section>
+    <!-- SKILLS SECTION -->
 
-<!-- SKILLS SECTION -->
-
-<section id="section-2" class="skills-section">
-  <div id="section-2-container" class="section-containers">
-      <div class="skills-section-header">
-          <h2>My skills</h2>
-      </div>
-      <div class="skills-grid-box">
-          <p class="skills-title" id="skill-1">HTML</p>
-          <p class="skills-title" id="skill-2">CSS</p>
-          <p class="skills-title" id="skill-3">SASS</p>
-          <p class="skills-title" id="skill-4">Bootstrap</p>
-          <p class="skills-title" id="skill-5">Javascript</p>
-          <p class="skills-title" id="skill-6">Typescript</p>
-          <p class="skills-title" id="skill-7">React-Redux</p>
-          <p class="skills-title" id="skill-8">React Native</p>
-          <p class="skills-title" id="skill-9">Electron.js</p>
-          <p class="skills-title" id="skill-10">Node.js</p>
-          <p class="skills-title" id="skill-11">Express.js</p>
-          <p class="skills-title" id="skill-12">SQL-NoSQL</p>
-      </div>
-  </div>
-</section>
-
-
-<!-- CONTACT SECTION -->
-
-<section id="section-4" class="contact-section">
-  <div id="section-4-container" class="section-containers">
-      <div class="contact-section-header">
-          <h2>Let's work together</h2>
-          <p>How do you take your coffee?</p>
-      </div>
-      <div class="contact-links">
-          <div class="contact-link">
-              <a href="https://facebook.com" target="_blank" class="contact-details"
-                  rel="noopener noreferrer"><i class="fab fa-facebook-square"></i> Facebook</a>
-
-              <a id="profile-link" href="https://github.com" target="_blank" class="contact-details"
-                  rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-          </div>
-          <div class="contact-link">
-              <a href="https://twitter.com" target="_blank" class="contact-details"
-                  rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
-
-              <a href="mailto:example@example.com" class="contact-details"><i class="fas fa-at"
-                      rel="noopener noreferrer"></i> Send a mail</a>
-          </div>
-      </div>
-      <div class="contact-section-notice">
-          <p>
-              This is just a example of portfolio.
-          </p>
-          <p>
-              But all the projects are real ;-)
-          </p>
-      </div>
-  </div>
+    <section id="section-2" class="skills-section">
+        <div id="section-2-container" class="section-containers">
+            <div class="skills-section-header">
+                <h2>My skills</h2>
+            </div>
+            <div class="skills-grid-box">
+                <p class="skills-title" id="skill-1">HTML</p>
+                <p class="skills-title" id="skill-2">CSS</p>
+                <p class="skills-title" id="skill-3">SASS</p>
+                <p class="skills-title" id="skill-4">Bootstrap</p>
+                <p class="skills-title" id="skill-5">Javascript</p>
+                <p class="skills-title" id="skill-6">Typescript</p>
+                <p class="skills-title" id="skill-7">React-Redux</p>
+                <p class="skills-title" id="skill-8">React Native</p>
+                <p class="skills-title" id="skill-9">Electron.js</p>
+                <p class="skills-title" id="skill-10">Node.js</p>
+                <p class="skills-title" id="skill-11">Express.js</p>
+                <p class="skills-title" id="skill-12">SQL-NoSQL</p>
+            </div>
+        </div>
+    </section>
 
 
-</section>
+    <!-- CONTACT SECTION -->
+
+    <section id="section-4" class="contact-section">
+        <div id="section-4-container" class="section-containers">
+            <div class="contact-section-header">
+                <h2>Let's work together</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div class="contact-links">
+                <div class="contact-link">
+                    <a href="https://facebook.com/freecodecamp" target="_blank" class="contact-details"
+                        rel="noopener noreferrer"><i class="fab fa-facebook-square"></i> Facebook</a>
+
+                    <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="contact-details"
+                        rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <div class="contact-link">
+                    <a href="https://twitter.com/freecodecamp" target="_blank" class="contact-details"
+                        rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
+
+                    <a href="mailto:example@example.com" class="contact-details"><i class="fas fa-at"
+                            rel="noopener noreferrer"></i> Send a mail</a>
+                </div>
+            </div>
+            <div class="contact-section-notice">
+                <p>
+                    This is just a example of portfolio.
+                </p>
+                <p>
+                    But all the projects are real ;-)
+                </p>
+            </div>
+        </div>
 
 
-
-<!-- PROJECTS SECTION -->
-
-<section id="section-3" class="projects-section">
-  <div id="section-3-container" class="section-containers">
-      <h2 class="projects-section-header">My projects</h2>
-      <div class="projects-grid">
-          <a id="project-1" href="https://codepen.io/devless/full/NWgRzZx" target="_blank"
-              class="project slide-hidden" rel="noopener noreferrer">
-              <div class="project-image-container">
-                  <img class="project-image"
-                      src="./tribute.webp" alt="project" />
-              </div>
-             <p class="project-title">
-                  Tribute Page
-              </p>  
-          </a>
-          <a id="project-2" href="https://codepen.io/devless/full/dyRLKRO" target="_blank"
-              class="project slide-left" rel="noopener noreferrer">
-              <div class="project-image-container">
-                  <img class="project-image"
-                      src="./survey.webp"
-                      alt="project" />
-              </div>
-              <p class="project-title">
-                  Survey Form
-              </p>
-          </a>
-          <a id="project-3" href="https://codepen.io/devless/full/xxLxNBa" target="_blank"
-              class="project slide-center" rel="noopener noreferrer">
-              <div class="project-image-container">
-                  <img class="project-image"
-                      src="./document.webp" alt="project" />
-              </div>
-              <p class="project-title">
-                  Technical Documentation Page
-              </p>
-          </a>
-          <a id="project-4" href="https://codepen.io/devless/full/VwMQLbP" target="_blank"
-              class="project slide-right" rel="noopener noreferrer">
-              <div class="project-image-container">
-                  <img class="project-image"
-                      src="./plot.webp" alt="project" />
-              </div>
-              <p class="project-title">
-                  D3 Scatter Plot
-              </p>
-          </a>
-          <a id="project-5" href="https://codepen.io/devless/full/ZEXodNb" target="_blank"
-              class="project slide-hidden" rel="noopener noreferrer">
-              <div class="project-image-container">
-                  <img class="project-image"
-                      src="./product.webp" alt="project" />
-              </div>
-              <p class="project-title">
-                  Product Landing Page
-              </p>
-          </a>
-          <a id="project-6" href="https://codepen.io/devless/full/JjOjdYE" target="_blank"
-              class="project slide-hidden" rel="noopener noreferrer">
-              <div class="project-image-container">
-                  <img class="project-image"
-                      src="./blue.webp"
-                      alt="project" />
-              </div>
-              <p class="project-title">
-                  Blue Mountains 3D Paralax
-              </p>
-          </a>
-      </div>
-      <div id="slider">
-          <a class="slider-button" id="slider-button-left" title="Previous project" href="#">
-              <i class="fas fa-chevron-left"></i> </a>
-          <a href="https://codepen.io/devless/" class="btn-show-all" target="_blank"
-              rel="noopener noreferrer">SHOW ALL</a>
-          <a class="slider-button" id="slider-button-right" title="Next project" href="#">
-              <i class="fas fa-chevron-right"></i> </a>
-      </div>
-
-  </div>
-</section>
+    </section>
 
 
 
-<!-- NAVBAR-BOTTOM SECTION -->
+    <!-- PROJECTS SECTION -->
 
-<div class="navbar-bottom">
-  <p id="prev">&#8920</p>
-  <p id="navbar-bottom-text">1/4</p>
-  <p id="next">&#8921</p>
-</div>
-  
-  </body>
-    
-  </html>
+    <section id="section-3" class="projects-section">
+        <div id="section-3-container" class="section-containers">
+            <h2 class="projects-section-header">My projects</h2>
+            <div class="projects-grid">
+                <a id="project-1" href="https://raff1010x.github.io/02.Responsive-Web-Design-Projects--Build-a-Tribute-Page/" target="_blank"
+                    class="project slide-hidden" rel="noopener noreferrer">
+                    <div class="project-image-container">
+                        <img class="project-image"
+                            src="./images/tribute.webp" alt="project" />
+                    </div>
+                    <p class="project-title">
+                        Tribute Page
+                    </p>
+                </a>
+                <a id="project-2" href="https://raff1010x.github.io/03.Responsive-Web-Design-Projects--Build-a-Survey-Form/" target="_blank"
+                    class="project slide-left" rel="noopener noreferrer">
+                    <div class="project-image-container">
+                        <img class="project-image"
+                            src="./images/survey.webp"
+                            alt="project" />
+                    </div>
+                    <p class="project-title">
+                        Survey Form
+                    </p>
+                </a>
+                <a id="project-3" href="https://raff1010x.github.io/05.Responsive-Web-Design-Projects--Build-a-Technical-Documentation-Page/" target="_blank"
+                    class="project slide-center" rel="noopener noreferrer">
+                    <div class="project-image-container">
+                        <img class="project-image"
+                            src="./images/document.webp" alt="project" />
+                    </div>
+                    <p class="project-title">
+                        Technical Documentation Page
+                    </p>
+                </a>
+                <a id="project-4" href="https://raff1010x.github.io/18.Data-Visualization-Projects--Visualize-Data-with-a-Scatterplot-Graph/" target="_blank"
+                    class="project slide-right" rel="noopener noreferrer">
+                    <div class="project-image-container">
+                        <img class="project-image"
+                            src="./images/plot.webp" alt="project" />
+                    </div>
+                    <p class="project-title">
+                        D3 Scatter Plot
+                    </p>
+                </a>
+                <a id="project-5" href="https://raff1010x.github.io/04.Responsive-Web-Design-Projects--Build-a-Product-Landing-Page/" target="_blank"
+                    class="project slide-hidden" rel="noopener noreferrer">
+                    <div class="project-image-container">
+                        <img class="project-image"
+                            src="./images/product.webp" alt="project" />
+                    </div>
+                    <p class="project-title">
+                        Product Landing Page
+                    </p>
+                </a>
+                <a id="project-6" href="https://raff1010x.github.io/38.Blue-Mountains--3D-Paralax/" target="_blank"
+                    class="project slide-hidden" rel="noopener noreferrer">
+                    <div class="project-image-container">
+                        <img class="project-image"
+                            src="./images/blue.webp"
+                            alt="project" />
+                    </div>
+                    <p class="project-title">
+                        Blue Mountains 3D Paralax
+                    </p>
+                </a>
+            </div>
+            <div id="slider">
+                <a class="slider-button" id="slider-button-left" title="Previous project" href="#">
+                    <i class="fas fa-chevron-left"></i> </a>
+                <a href="https://codepen.io/devless/" class="btn-show-all" target="_blank"
+                    rel="noopener noreferrer">SHOW ALL</a>
+                <a class="slider-button" id="slider-button-right" title="Next project" href="#">
+                    <i class="fas fa-chevron-right"></i> </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- NAVBAR-BOTTOM SECTION -->
+
+    <div class="navbar-bottom">
+        <p id="prev">&#8920</p>
+        <p id="navbar-bottom-text">1/4</p>
+        <p id="next">&#8921</p>
+    </div>
+
+</body>
+
+</html>

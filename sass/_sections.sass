@@ -1,0 +1,25 @@
+//<!-- SECTIONS -->
+    
+section
+  width: 100vw
+  height: 100vh
+
+
+.section-containers
+  position: fixed
+  top: 10vh
+  left: 5vw
+  width: 90vw
+  height: 80vh
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: .75s
+  opacity: 0
+  filter: blur(10px) contrast(0) sepia(90%) hue-rotate(var(--data-color-hue-rotate)) saturate(50)
+  transform: scale(2)
+
+.section-activated
+  opacity: 1 !important
+  filter: blur(0px) contrast(1) sepia(0%) hue-rotate(0) saturate(1)
+  transform: scale(1) !important
