@@ -1,6 +1,6 @@
-# freeCodeCamp Responsive Web Design certification
+# [freeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/)
 
-## Build a Personal Portfolio Webpage project
+## [Build a Personal Portfolio Webpage project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
 Working example: https://raff1010x.github.io/06.Responsive-Web-Design-Projects--Build-a-Personal-Portfolio-Webpage/
 
